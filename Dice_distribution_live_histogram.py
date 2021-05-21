@@ -13,8 +13,7 @@ t = np.arange(number_of_dice, max_value + number_of_dice)
 
 for i in range(max_trials):
     result = 0
-    for die in range(number_of_dice):
-        result += np.random.randint(1, 6 + 1)
+    result = np.sum(np.random.randint(1, 6 + 1, number_of_dice))
     results[result - number_of_dice] += 1
     if (i + 1) % interval == 0:
         os.system('cls')
