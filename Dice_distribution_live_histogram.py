@@ -1,13 +1,13 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
-import os
 
 if __name__ == "__main__":
     number_of_dice = int(input("How many dice?\n"))
     max_trials = int(input("How many trials?\n"))
     interval = int(input("What's the interval between updating the plot?\n"))
-    max_value = 5 * number_of_dice + 1  # Because the minimal value is sum of ones and there can't be a lower value
+    max_value = 5 * number_of_dice + 1  # Excluding not possible values
     results = [0] * max_value
     calculated_results = [0] * max_value
     t = np.arange(start=number_of_dice, stop=max_value + number_of_dice)
