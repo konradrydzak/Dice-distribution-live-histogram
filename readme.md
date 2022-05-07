@@ -3,8 +3,8 @@ Plots a histogram showing a distribution of sum of chosen number of dice. After 
 
 ## Setup
 
-1. Run command: *pip install -r requirements.txt*
-2. Run program at: *Dice_distribution_live_histogram.py*
+1. Run command: `pip install -r requirements.txt`
+2. Run program with command: `Dice_distribution_live_histogram.py`
 
 ## Screenshots
 ![Initial_input.png](docs/Initial_input.png "Example initial input")
